@@ -1,5 +1,5 @@
-import Head from 'next/head'
 import styles from './layout.module.css'
+import Header from './header'
 
 type LayoutProps = {
   children: React.ReactNode
@@ -8,10 +8,10 @@ type LayoutProps = {
 export default function Layout({ children }: LayoutProps) {
   return (
     <>
-      <Head>
-        <title>Layouts Example</title>
-      </Head>
-      <main className={styles.main}>{children}</main>
+      <main className={styles.main}>
+        <Header/>
+        {children}
+      </main>
     </>
   )
 }

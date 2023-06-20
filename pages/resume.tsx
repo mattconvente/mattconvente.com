@@ -2,25 +2,25 @@ import Head from 'next/head'
 import type { NextPageWithLayout } from './_app'
 import Layout from '../components/layout'
 
-const Contact: NextPageWithLayout = () => {
+const Resume: NextPageWithLayout = () => {
   return (
     <>
       <Head>
-        <title>Contact &mdash; Matt Convente</title>
+        <title>Resume &mdash; Matt Convente</title>
       </Head>
       <section>
-        <h2>Contact</h2>
+        <h2>Resume</h2>
         <p>
-          Contact Matt Convente.
+          Resume of Matt Convente.
         </p>
       </section>
     </>
   )
 }
 
-export default Contact
+export default Resume
 
-Contact.getLayout = function getLayout(page: React.ReactElement) {
+Resume.getLayout = function getLayout(page: React.ReactElement) {
   return (
     <Layout>
       {page}
